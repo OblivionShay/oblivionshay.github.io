@@ -5,6 +5,12 @@
 </head>
 
 <style>
+
+    .no-interact {
+     user-select: none; /* Prevents text selection on double-click/drag */
+     pointer-events: none; /* Prevents the text from being the target of any pointer events */
+    }
+
     .btn {
       background-color: #04AA6D;
       color: white;
@@ -23,7 +29,8 @@
 <p>Thank you for taking the time to look around my portfolio.</p>
 <p1>
     <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/chael-bit'"> 
-        LinkedIn </button>
+        <span class="no-interact">LinkedIn</span>
+    </button>
     </p1>
 
 
