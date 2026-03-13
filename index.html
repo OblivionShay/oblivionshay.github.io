@@ -6,35 +6,53 @@
 
 <style>
 
-    .no-interact {
-     user-select: none; /* Prevents text selection on double-click/drag */
-     pointer-events: none; /* Prevents the text from being the target of any pointer events */
-    }
+.header-container {
+  display: flex;       /* Enables flexbox layout */
+  align-items: center; /* Vertically aligns items in the center */
+  gap: 20px;           /* Adds space between the image and the header */
+  background-color: darkseagreen;
+  /* Add other styling as needed, e.g., padding, background color */
+}
 
-    .btn {
-      background-color: #04AA6D;
-      color: white;
-      font-size: 15px;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
+.header-img {
+  width: 125px; 
+  /* Adjust the image size as needed */
+  height: auto;
+}
+
+h1 {
+  margin: 0;           /* Remove default margin from the header for better alignment */
+}
+
+.no-interact {
+    user-select: none; /* Prevents text selection on double-click/drag */
+    pointer-events: none; /* Prevents the text from being the target of any pointer events */
+}
+
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
     </style>
 
+<div class="header-container">
+    <img src="\Images\Selfie.jpg" alt="Description of image" class="header-img">
+    <h1>OblivionShay's Web Portfolio</h1>
+  </div>
 <body>
     <body style="background-color:darkseagreen">
-<h1>OblivionShay's Web Portfolio</h1>
+
+
 <p>Thank you for taking the time to look around my portfolio.</p>
 <p1>
     <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/chael-bit'"> 
         <span class="no-interact">LinkedIn</span>
     </button>
     </p1>
-
-
-<img src="\Images\Selfie.jpg" width="125" height="150">
-
 </body>
 </html>
